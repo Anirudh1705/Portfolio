@@ -11,7 +11,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
             rel="stylesheet">
-        </head>
+    </head>
         <style>
         * {
             margin: 0;
@@ -129,7 +129,7 @@
             height: 93px;
             width: 1px;
             background-color: white;
-            margin: 0 100px;
+            margin: 0 6vw;
         }
 
         .image-top{
@@ -178,7 +178,59 @@
             padding: 12px 0;
         }
 
+        @media screen and (max-width: 1400px) {
+    body{
+        /*background-color: rgb(48, 17, 151);*/
+    }
+    .box{
+        flex-direction: column;
+    }
+    .secondSection .vertical{
+        height: unset;
+    }
+    .vertical-desc,.vertical-title{
+        left: 45px;
+    }
+    .secondSection .box{
+        width: 50vw;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .firstSection{
+        flex-direction: column-reverse;
+    }
+    .leftSection{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rightSection{
+        width: 72% !important;
+        display: flex;
+        justify-content: center;
+    }
+    .rightSection img{
+        width: 45vw;
+        margin-bottom: 73px;
+    }
+    .image-top{
+        top: 77px;
+    }
+    .secondSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .secondSection{
+        height: 141vh;
+    }
+    }
+
     </style>
+
 
     <body>
         <header>
@@ -187,7 +239,7 @@
                 <div class="right">
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="/">About</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="/">Services</a></li>
                         <li><a href="/">Projects</a></li>
                         <li><a href="/">Contact Me</a></li>
@@ -198,9 +250,9 @@
 
         <main>
             <section class="firstSection">
-                <div class="leftSection">Hi, My name is <span
-                        class="text-purple">Anirudh
-                        Kaushik</span>
+                <div class="leftSection">
+                    <div>Hi, My name is 
+                    <span class="text-purple">Anirudh Kaushik</span></div>
                     <div>and I am a Passionate</div>
                     <span id="element"></span>
                     <div class="buttons">
@@ -220,61 +272,61 @@
                     <div class="vertical">
                         <img class="image-top" src="br.png" alt>
                         <div class="vertical-title">
-                            Adobe Illustrator
+                            Illustrations
                         </div>
                         <div class="vertical-desc">
-                        <!--Lorem ipsum dolor sit amet consectetur adipisicing
+                            <!--Lorem ipsum dolor sit amet consectetur adipisicing
                             elit.
                             Libero unde omnis ullam, enim facilis possimus accus
-                            Dolores mollitia odio quos. Facilis, incidunt? -->
+                            Dolores mollitia odio quos. Facilis, incidunt?-->
                         </div>
                     </div>
                     <div class="vertical">
                         <img class="image-top" src="br.png" alt>
                         <div class="vertical-title">
-                            Figma
+                            Photography
                         </div>
                         <div class="vertical-desc">
-                        <!--Lorem ipsum dolor sit amet consectetur adipisicing
+                            <!--Lorem ipsum dolor sit amet consectetur adipisicing
                             elit.
                             Libero unde omnis ullam, enim facilis possimus accus
-                            Dolores mollitia odio quos. Facilis, incidunt? -->
+                            Dolores mollitia odio quos. Facilis, incidunt?-->
                         </div>
                     </div>
                     <div class="vertical">
                         <img class="image-top" src="br.png" alt>
                         <div class="vertical-title">
-                            Wondershare Filmora
+                            Graphic Designer
                         </div>
                         <div class="vertical-desc">
-                        <!--Lorem ipsum dolor sit amet consectetur adipisicing
+                            <!--Lorem ipsum dolor sit amet consectetur adipisicing
                             elit.
                             Libero unde omnis ullam, enim facilis possimus accus
-                            Dolores mollitia odio quos. Facilis, incidunt? -->
+                            Dolores mollitia odio quos. Facilis, incidunt?-->
                         </div>
                     </div>
                     <div class="vertical">
                         <img class="image-top" src="br.png" alt>
                         <div class="vertical-title">
-                            Python
+                            Video Editor
                         </div>
                         <div class="vertical-desc">
-                        <!--Lorem ipsum dolor sit amet consectetur adipisicing
+                            <!--Lorem ipsum dolor sit amet consectetur adipisicing
                             elit.
                             Libero unde omnis ullam, enim facilis possimus accus
-                            Dolores mollitia odio quos. Facilis, incidunt? -->
+                            Dolores mollitia odio quos. Facilis, incidunt?-->
                         </div>
                     </div>
                     <div class="vertical">
                         <img class="image-top" src="br.png" alt>
                         <div class="vertical-title">
-                            WEB Developer
+                            WEB Developer <!--(2010-2012)-->
                         </div>
                         <div class="vertical-desc">
-                        <!--Lorem ipsum dolor sit amet consectetur adipisicing
+                            <!--Lorem ipsum dolor sit amet consectetur adipisicing
                             elit.
                             Libero unde omnis ullam, enim facilis possimus accus
-                            Dolores mollitia odio quos. Facilis, incidunt? -->
+                            Dolores mollitia odio quos. Facilis, incidunt?-->
                         </div>
                     </div>
                 </div>
@@ -313,7 +365,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer-rights">Copyright&#169; anirudhkaushik.eu.org | All rights reserved</div>
+            <div class="footer-rights">Copyright&#169; anirudhkaushik.eu.org |
+                All rights reserved</div>
         </footer>
         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
         <script>
@@ -321,7 +374,6 @@
             strings: ['Coder', 'Graphic Designer'],
             typeSpeed: 50,
         });
-    </script>
+        </script>
     </body>
-
 </html>
